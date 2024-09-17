@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #017b7b;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.header h3 {
+    margin: 0;
+}
+
+.left-header h3 {
+    font-size: 24px;
+}
+
+.right-header {
+    text-align: right;
+}
+
+/* Table Styles */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla th, .tabla td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.ajaxTitle {
+    background-color: #017b7b;
+    color: #fff;
+}
+
+/* Totals Styles */
+.totals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.totals-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.totals-right div {
+    margin-bottom: 10px;
+}
+
+.totals-right label {
+    font-weight: bold;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Buttons */
+.btn-teal {
+    background-color: #017b7b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn-teal:hover {
+    background-color: #015f5f;
+}
+
+.btn-blue {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-blue:hover {
+    background-color: #0056b3;
+}
+
+/* Fieldset and Forms */
+fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.product-client {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product, .client {
+    width: 48%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .totals {
+        flex-direction: column;
+    }
+
+    .product-client {
+        flex-direction: column;
+    }
+
+    .product, .client {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
